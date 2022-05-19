@@ -26,6 +26,11 @@ body {
   height: 80%;
   margin: auto;
 }
+.text-container {
+  background: url(torte.jpeg) center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
+}
 
 .strikethrough {
   text-decoration: line-through;
@@ -34,6 +39,7 @@ body {
 .card .text-container #head {
   font-family: 'Nobile', sans-serif;
   font-size: 1.5em;
+  color: rgb(43, 43, 226);
   margin: 60px auto 60px auto;
 }
 
@@ -45,6 +51,7 @@ body {
   font-style: italic;
   text-align: center;
   margin: 30px auto 0px auto;
+    color: hsl(252, 76%, 53%);
 }
 
 .card .front {
@@ -96,30 +103,34 @@ body {
   height: 48%;
   top: 25%;
   left: 18%;
-    border-radius: 100px;
+  border-radius: 100px;
 
-   animation-name: example;
+  animation-name: example;
   animation-duration: 3s;
-    animation-delay: 3s;
-    animation-iteration-count: 5;
-    animation-iteration-count: infinite;
+  animation-delay: 3s;
+  animation-iteration-count: 5;
+  animation-iteration-count: infinite;
   transform: rotateZ(45deg);
 }
 @keyframes example {
-  from {transform: rotateZ(45deg);}
-  to {transform: rotateZ(360deg);}
+  from {
+    transform: rotateZ(45deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 .cover-shape-large .shape-block,
 .cover-shape-large .shape-diamond {
   background-color: #84c6cb;
-    border-radius: 400px 4880px 900px 8000px;
+  border-radius: 400px 4880px 900px 8000px;
 }
 
 img {
   width: 120%;
   position: absolute;
-  left:-20px;
+  left: -20px;
 }
 .cake {
   width: 300%;
